@@ -23,6 +23,30 @@
  * 
 */
 
+// Define the data structure for the sections. An array of objects, with each object representing a section.
+const sectionsData = [
+    {
+      id: 'section4',
+      dataNav: 'Section 4',
+      content: 'Content for Section 4 goes here',
+    },
+    {
+      id: 'section5',
+      dataNav: 'Section 5',
+      content: 'Content for Section 5 goes here',
+    },
+    {
+      id: 'section6',
+      dataNav: 'Section 6',
+      content: 'Content for Section 6 goes here',
+    },
+    {
+      id: 'section7',
+      dataNav: 'Section 7',
+      content: 'Content for Section 7 goes here',
+    },
+  ];
+
 
 /**
  * End Global Variables
