@@ -46,15 +46,31 @@ const sectionsData = [
       content: 'Content for Section 7 goes here',
     },
   ];
-
-
 /**
  * End Global Variables
  * Start Helper Functions
  * 
 */
 
-
+// Function to create a section.
+function createSection (id, dataNav, content) {
+  const section = document.createElement ('section')
+  section.id = id;
+  section.setAttribute ('data-nav', dataNav);
+// Creates a div element with the class landing__container and adds the content to it.
+  const container = document.createElement ('div');
+  container.classList.add ('landing__container');
+  container.textContent = content;
+// Adds the div element to the section element.
+section.appendChild (container);
+return section
+}; 
+// Loop that iterates through the sectionsData array and creates a section for each object in the array.
+for (const sectionData of sectionsData) {
+  const section = createSection (sectionData.id, sectionData.dataNav, sectionData.content);
+  const mainSection = document.querySelector ('main');
+  mainSection.appendChild (section);
+}
 
 /**
  * End Helper Functions
