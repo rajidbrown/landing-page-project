@@ -50,8 +50,8 @@ const sectionsData = [
  * End Global Variables
  * Start Helper Functions
  * 
+ * 
 */
-
 // Function to create a section.
 function createSection (id, dataNav, content) {
   const section = document.createElement ('section')
@@ -71,7 +71,6 @@ for (const sectionData of sectionsData) {
   const mainSection = document.querySelector ('main');
   mainSection.appendChild (section);
 }
-
 /**
  * End Helper Functions
  * Begin Main Functions
