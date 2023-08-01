@@ -68,7 +68,7 @@ return section
 // Loop that iterates through the sectionsData array and creates a section for each object in the array.
 for (const sectionData of sectionsData) {
   const section = createSection (sectionData.id, sectionData.dataNav, sectionData.content);
-  const mainSection = document.querySelector ('main');
+  const mainSection = document.getElementById ('main');
   mainSection.appendChild (section);
 }
 /**

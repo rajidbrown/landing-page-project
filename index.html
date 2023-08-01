@@ -8,14 +8,6 @@
   <!-- Load Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
   <link href="css/styles.css" rel="stylesheet">
-  <script src="js/app.js" defer></script>
-    <script>
-        // Wrap your other JavaScript code inside the DOMContentLoaded event listener
-        document.addEventListener("DOMContentLoaded", function() {
-            // Your other JavaScript code here
-            // This code will only run after the DOM is fully loaded and ready
-        });
-    </script>
 </head>
 <body>
   <!-- HTML Follows BEM naming conventions 
@@ -26,7 +18,7 @@
       <ul id="navbar__list"></ul>
     </nav>
   </header>
-  <main>
+  <main id="main">
     <header class="main__hero">
       <h1>Landing Page </h1>
     </header>
@@ -62,6 +54,13 @@
   <footer class="page__footer">
     <p>&copy Udacity</p>
   </footer>
-
+  <script src="app.js" defer></script>
+  <script>
+      // Wrap your other JavaScript code inside the DOMContentLoaded event listener
+      document.addEventListener("DOMContentLoaded", function() {
+          // Your other JavaScript code here
+          // This code will only run after the DOM is fully loaded and ready
+      });
+  </script>
 </body>
 </html>
