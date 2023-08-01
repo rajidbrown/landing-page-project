@@ -56,6 +56,7 @@ const sectionsData = [
 function createSection (id, dataNav, content) {
   const section = document.createElement ('section')
   section.id = id;
+  section.classList.add ('section-class');
   section.setAttribute ('data-nav', dataNav);
 // Creates a div element with the class landing__container and adds the content to it.
   const container = document.createElement ('div');
@@ -78,6 +79,13 @@ for (const sectionData of sectionsData) {
 */
 
 // build the nav
+const navList = document.getElementById('navbar--list'); 
+
+// Function to create a list item for the navigation menu.
+sectionsData.forEach (function (sectionData) {
+document.createElementall
+
+});
 
 
 // Add class 'active' to section when near top of viewport
